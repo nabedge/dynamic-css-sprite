@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.mixer2.sample</groupId>
-    <artifactId>dynamic-css-sprite</artifactId>
+    <artifactId>mixer2-dynamic-csssprite-springmvc</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>${project.artifactId}</name>
