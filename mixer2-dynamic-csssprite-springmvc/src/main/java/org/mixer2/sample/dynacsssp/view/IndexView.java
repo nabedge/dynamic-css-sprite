@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.mixer2.jaxb.xhtml.A;
-import org.mixer2.jaxb.xhtml.H1;
+import org.mixer2.jaxb.xhtml.H2;
 import org.mixer2.jaxb.xhtml.Html;
 import org.mixer2.jaxb.xhtml.Img;
 import org.mixer2.sample.dynacsssp.service.CssSpriteService;
@@ -43,9 +43,9 @@ public class IndexView extends AbstractMixer2XhtmlView {
         Html html = getMixer2Engine().loadHtmlTemplate(
                 resourceLoader.getResource(mainTemplate).getInputStream());
 
-        H1 h1 = html.getById("helloMessage", H1.class);
-        h1.unsetContent();
-        h1.getContent().add(helloMessage);
+        H2 h2 = html.getById("helloMessage", H2.class);
+        h2.unsetContent();
+        h2.getContent().add(helloMessage);
 
         // css sprite !
         cssSprite(request.getContextPath(), html);
